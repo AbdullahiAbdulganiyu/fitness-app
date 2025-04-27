@@ -18,7 +18,9 @@ export default function Hero() {
         <span className="text-blue-400 font-medium">mass montrosity</span>
         afflicted with sevre body dimorphia, unable to fit through doors.
       </p>
-      <button className="px-8 py-4 rounded ">Accept & Begin</button>
+      <button className="px-8 py-4 rounded ">
+        <p>Accept & Begin</p>
+      </button>
     </div>
   );
 }
