@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col gap-10 items-center justify-center">
       <p>IT'S TIME TO GET</p>
       <h1>
         Swole<span>normous</span>
