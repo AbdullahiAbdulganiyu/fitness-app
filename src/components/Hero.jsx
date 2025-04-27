@@ -9,9 +9,12 @@ export default function Hero() {
       </h1>
       <p className="text-sm md:text-base font-light">
         I hereby acknowledge that I may become
-        <span>unbelievably swolenormous</span> and accept all the risk of
-        becoming the local <span>mass montrosity</span> afflicted with sevre
-        body dimorphia, unable to fit through doors.
+        <span className="text-blue-400 font-medium">
+          unbelievably swolenormous
+        </span>
+        and accept all the risk of becoming the local
+        <span className="text-blue-400 font-medium">mass montrosity</span>
+        afflicted with sevre body dimorphia, unable to fit through doors.
       </p>
     </div>
   );
