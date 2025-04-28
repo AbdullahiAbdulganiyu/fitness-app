@@ -4,7 +4,7 @@ import SectionWrapper from "./SectionWrapper";
 export default function Generator() {
   return (
     <div>
-      <SectionWrapper></SectionWrapper>
+      <SectionWrapper>section wrapper</SectionWrapper>
     </div>
   );
 }
