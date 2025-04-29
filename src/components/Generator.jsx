@@ -6,7 +6,7 @@ export default function Generator() {
     <div>
       <SectionWrapper
         header={"genrate your workout"}
-        title={["it's huge o'clock"]}
+        title={["it's", "huge", "o'clock"]}
       >
         section wrapper
       </SectionWrapper>
