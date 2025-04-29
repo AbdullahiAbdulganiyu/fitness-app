@@ -11,6 +11,7 @@ export default function SectionWrapper({ children, header, title }) {
           {title[2]}
         </h2>
       </div>
+      {children}
     </section>
   );
 }
