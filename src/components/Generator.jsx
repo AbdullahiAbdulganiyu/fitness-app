@@ -25,7 +25,6 @@ export default function Generator() {
           title={"Select your poison"}
           description={"Select the workout you wish to endure."}
         />
-        section wrapper
       </SectionWrapper>
     </div>
   );
