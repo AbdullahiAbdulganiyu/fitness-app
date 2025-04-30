@@ -10,7 +10,7 @@ function Header({ index, title, description }) {
         </p>
         <h4 className="text-lg sm:text-2xl md:text-3xl">{title}</h4>
       </div>
-      <p>{description}</p>
+      <p className="text-sm sm:text-base mx-auto">{description}</p>
     </div>
   );
 }
