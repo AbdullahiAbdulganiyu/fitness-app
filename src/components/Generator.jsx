@@ -20,6 +20,11 @@ export default function Generator() {
         header={"genrate your workout"}
         title={["it's ", "huge", " o'clock"]}
       >
+        <Header
+          index={"01"}
+          title={"Select your poison"}
+          description={"Select the workout you wish to enjoy."}
+        />
         section wrapper
       </SectionWrapper>
     </div>
