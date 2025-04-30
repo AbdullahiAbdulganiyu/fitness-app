@@ -23,7 +23,7 @@ export default function Generator() {
         <Header
           index={"01"}
           title={"Select your poison"}
-          description={"Select the workout you wish to enjoy."}
+          description={"Select the workout you wish to endure."}
         />
         section wrapper
       </SectionWrapper>
