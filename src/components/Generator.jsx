@@ -8,7 +8,7 @@ function Header({ index, title, description }) {
         <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-400">
           {index}
         </p>
-        <h4>{title}</h4>
+        <h4 className="text-lg sm:text-2xl md:text-3xl">{title}</h4>
       </div>
       <p>{description}</p>
     </div>
