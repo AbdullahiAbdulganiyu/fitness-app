@@ -52,7 +52,10 @@ export default function Generator() {
           description={"Select the muscles judged for annihilation"}
         />
         <div className="bg-slate-950 border border-solid border-blue-400 rounded-lg flex flex-col">
-          <button className="relative flex items-center justify-center p-3">
+          <button
+            onClick={toggleModal}
+            className="relative flex items-center justify-center p-3"
+          >
             <p>Select muscle groups</p>
             <i className="fa-solid fa-caret-down absolute right-3 top-1/2 -translate-y-1/2"></i>
           </button>
