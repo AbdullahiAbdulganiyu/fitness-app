@@ -41,6 +41,11 @@ export default function Generator() {
             );
           })}
         </div>
+        <Header
+          index={"02"}
+          title={"Lock on targets"}
+          description={"Select the muscles judged for annihilation"}
+        />
       </SectionWrapper>
     </div>
   );
