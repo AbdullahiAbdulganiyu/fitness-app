@@ -79,10 +79,10 @@ export default function Generator() {
               <button
                 key={schemeIndex}
                 onClick={() => {
-                  setPoison(scheme);
+                  setGoals(scheme);
                 }}
                 className={`bg-slate-950 border border-blue-400 py-3 rounded-lg duration-400 hover:border-blue-600 ${
-                  scheme === poison ? "border-blue-600" : "border-blue-400"
+                  scheme === goals ? "border-blue-600" : "border-blue-400"
                 }`}
               >
                 <p className="capitalize">{scheme.replaceAll("_", " ")}</p>
