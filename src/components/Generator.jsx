@@ -29,14 +29,15 @@ export default function Generator() {
           description={"Select the workout you wish to endure."}
         />
 
-        <div className="grid grid-col-2 sm:grid-col-4"></div>
-        {Object.keys(WORKOUTS).map((type, typeIndex) => {
-          return (
-            <button key={typeIndex}>
-              <p>{type}</p>
-            </button>
-          );
-        })}
+        <div className="grid grid-col-2 sm:grid-col-4">
+          {Object.keys(WORKOUTS).map((type, typeIndex) => {
+            return (
+              <button key={typeIndex}>
+                <p>{type}</p>
+              </button>
+            );
+          })}
+        </div>
       </SectionWrapper>
     </div>
   );
