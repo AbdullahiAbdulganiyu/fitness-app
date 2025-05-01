@@ -78,6 +78,9 @@ export default function Generator() {
             return (
               <button
                 key={schemeIndex}
+                onClick={() => {
+                  setPoison(scheme);
+                }}
                 className="bg-slate-950 border border-blue-400 py-3 rounded-lg duration-400 hover:border-blue-600"
               >
                 <p className="capitalize">{scheme.replaceAll("_", " ")}</p>
