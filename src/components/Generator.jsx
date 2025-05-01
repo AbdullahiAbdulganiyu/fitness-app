@@ -1,5 +1,6 @@
 import React from "react";
 import SectionWrapper from "./SectionWrapper";
+import { WORKOUTS } from "../utils/swoldier";
 
 function Header({ index, title, description }) {
   return (
@@ -27,6 +28,14 @@ export default function Generator() {
           title={"Select your poison"}
           description={"Select the workout you wish to endure."}
         />
+
+        {Object.keys(WORKOUTS).map((type, typeIndex) => {
+          return (
+            <button key={typeIndex}>
+              <p>{type}</p>
+            </button>
+          );
+        })}
       </SectionWrapper>
     </div>
   );
