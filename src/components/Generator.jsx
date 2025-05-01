@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionWrapper from "./SectionWrapper";
 import { WORKOUTS } from "../utils/swoldier";
 
@@ -17,6 +17,7 @@ function Header({ index, title, description }) {
 }
 
 export default function Generator() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <SectionWrapper
