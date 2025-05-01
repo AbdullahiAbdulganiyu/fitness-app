@@ -29,7 +29,7 @@ export default function Generator() {
           description={"Select the workout you wish to endure."}
         />
 
-        <div className="grid grid-col-2 sm:grid-col-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {Object.keys(WORKOUTS).map((type, typeIndex) => {
             return (
               <button key={typeIndex}>
