@@ -42,7 +42,16 @@ export default function Generator() {
             return (
               <button
                 key={typeIndex}
-                className="bg-slate-950 border border-blue-400 py-3 rounded-lg duration-400 hover:border-blue-600"
+                onClick={() => {
+                  setPoison(type);
+                }}
+                className={
+                  "bg-slate-950 border py-3 rounded-lg duration-400 hover:border-blue-600" +
+                    type ===
+                  poison
+                    ? "border-blue-600"
+                    : "border-blue-400"
+                }
               >
                 <p className="capitalize">{type.replaceAll("_", " ")}</p>
               </button>
