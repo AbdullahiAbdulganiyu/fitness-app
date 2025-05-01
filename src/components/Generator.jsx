@@ -18,6 +18,7 @@ function Header({ index, title, description }) {
 
 export default function Generator() {
   const [showModal, setShowModal] = useState(false);
+  const [poison, setPoison] = useState("individual");
 
   function toggleModal() {
     setShowModal(!showModal);
