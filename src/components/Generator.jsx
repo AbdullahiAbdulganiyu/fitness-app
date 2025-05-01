@@ -46,6 +46,11 @@ export default function Generator() {
           title={"Lock on targets"}
           description={"Select the muscles judged for annihilation"}
         />
+        <div>
+          <div>
+            <p>Select muscle groups</p>
+          </div>
+        </div>
       </SectionWrapper>
     </div>
   );
