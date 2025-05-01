@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionWrapper from "./SectionWrapper";
-import { WORKOUTS } from "../utils/swoldier";
+import { SCHEMES, WORKOUTS } from "../utils/swoldier";
 
 function Header({ index, title, description }) {
   return (
@@ -63,6 +63,19 @@ export default function Generator() {
             <i className="fa-solid fa-caret-down absolute right-3 top-1/2 -translate-y-1/2"></i>
           </button>
           {showModal && <div>Modal</div>}
+        </div>
+
+        <div className="grid grid-cols-3 gap-4">
+          {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
+            return (
+              <button
+                key={schemeIndex}
+                className="bg-slate-950 border border-blue-400 py-3 rounded-lg duration-400 hover:border-blue-600"
+              >
+                <p className="capitalize">{scheme.replaceAll("_", " ")}</p>
+              </button>
+            );
+          })}
         </div>
       </SectionWrapper>
     </div>
