@@ -64,7 +64,11 @@ export default function Generator() {
           </button>
           {showModal && <div>Modal</div>}
         </div>
-
+        <Header
+          index={"03"}
+          title={"Become Juggernaut"}
+          description={"Select your ultimate objective."}
+        />
         <div className="grid grid-cols-3 gap-4">
           {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
             return (
