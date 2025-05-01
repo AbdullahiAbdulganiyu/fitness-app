@@ -34,7 +34,7 @@ export default function Generator() {
             return (
               <button
                 key={typeIndex}
-                className="bg-slate-950 border border-blue-400 py-3 rounded-lg"
+                className="bg-slate-950 border border-blue-400 py-3 rounded-lg duration-400 hover:border-blue-600"
               >
                 <p>{type}</p>
               </button>
