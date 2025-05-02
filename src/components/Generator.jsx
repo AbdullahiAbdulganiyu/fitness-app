@@ -25,6 +25,22 @@ export default function Generator() {
   function toggleModal() {
     setShowModal(!showModal);
   }
+
+  function updateMuscles(muscleGroup) {
+    if (muscles.length > 2) return;
+
+    if (poison !== "individual") {
+      setMuscles([muscleGroup]);
+      return;
+    }
+
+    if (muscles.includes(muscleGroup)) {
+      setMuscles(muscles.filter((val) => val !== muscleGroup));
+      return;
+    }
+
+    setMuscles([...muscles, muscleGroup]);
+  }
   return (
     <div>
       <SectionWrapper
