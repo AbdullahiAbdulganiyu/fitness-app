@@ -43,6 +43,10 @@ export default function Generator() {
     }
 
     setMuscles([...muscles, muscleGroup]);
+
+    if (muscles.length === 3) {
+      setShowModal(false);
+    }
   }
   return (
     <div>
