@@ -32,7 +32,7 @@ export default function Generator() {
       return;
     }
 
-    if (muscles.length > 3) {
+    if (muscles.length > 2) {
       return;
     }
 
