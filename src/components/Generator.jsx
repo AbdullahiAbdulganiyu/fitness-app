@@ -66,6 +66,7 @@ export default function Generator() {
               <button
                 key={typeIndex}
                 onClick={() => {
+                  setMuscles([]);
                   setPoison(type);
                 }}
                 className={`bg-slate-950 border py-3 rounded-lg duration-400 hover:border-blue-600
