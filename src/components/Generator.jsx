@@ -77,7 +77,9 @@ export default function Generator() {
                     key={muscleGroupIndex}
                     className="hover:text-blue-400 duration-200"
                   >
-                    <p className="uppercase">{muscleGroup}</p>
+                    <p className="uppercase">
+                      {muscleGroup.replaceAll("_", " ")}
+                    </p>
                   </button>
                 );
               })}
