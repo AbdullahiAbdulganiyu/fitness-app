@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionWrapper from "./SectionWrapper";
 import { SCHEMES, WORKOUTS } from "../utils/swoldier";
+import Button from "./Button";
 
 function Header({ index, title, description }) {
   return (
@@ -141,6 +142,7 @@ export default function Generator() {
             );
           })}
         </div>
+        <Button>Formulate</Button>
       </SectionWrapper>
     </div>
   );
