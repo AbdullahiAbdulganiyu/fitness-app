@@ -73,7 +73,10 @@ export default function Generator() {
                 : Object.keys(WORKOUTS[poison])
               ).map((muscleGroup, muscleGroupIndex) => {
                 return (
-                  <button key={muscleGroupIndex}>
+                  <button
+                    key={muscleGroupIndex}
+                    className="hover:text-blue-400 duration-200"
+                  >
                     <p className="uppercase">{muscleGroup}</p>
                   </button>
                 );
