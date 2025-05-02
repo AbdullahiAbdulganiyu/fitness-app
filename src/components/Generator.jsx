@@ -27,15 +27,15 @@ export default function Generator() {
   }
 
   function updateMuscles(muscleGroup) {
+    if (muscles.includes(muscleGroup)) {
+      setMuscles(muscles.filter((val) => val !== muscleGroup));
+      return;
+    }
+
     if (muscles.length > 2) return;
 
     if (poison !== "individual") {
       setMuscles([muscleGroup]);
-      return;
-    }
-
-    if (muscles.includes(muscleGroup)) {
-      setMuscles(muscles.filter((val) => val !== muscleGroup));
       return;
     }
 
