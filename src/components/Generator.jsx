@@ -66,7 +66,20 @@ export default function Generator() {
             <p>Select muscle groups</p>
             <i className="fa-solid fa-caret-down absolute right-3 top-1/2 -translate-y-1/2"></i>
           </button>
-          {showModal && <div className="flex flex-col">Modal</div>}
+          {showModal && (
+            <div className="flex flex-col px-3 pb-3">
+              {(poison === "individual"
+                ? WORKOUTS[poison]
+                : Object.keys(WORKOUTS[poison])
+              ).map((muscleGroup, muscleGroupIndex) => {
+                return (
+                  <button key={muscleGroupIndex}>
+                    <p>{muscleGroup}</p>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
         <Header
           index={"03"}
