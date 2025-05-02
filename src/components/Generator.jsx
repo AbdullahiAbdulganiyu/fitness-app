@@ -94,7 +94,9 @@ export default function Generator() {
                       updateMuscles;
                     }}
                     key={muscleGroupIndex}
-                    className="hover:text-blue-400 duration-200"
+                    className={`hover:text-blue-400 duration-200 ${
+                      muscles.includes(muscleGroup) ? "text-blue-400" : ""
+                    }`}
                   >
                     <p className="uppercase">
                       {muscleGroup.replaceAll("_", " ")}
