@@ -91,7 +91,7 @@ export default function Generator() {
                 return (
                   <button
                     onClick={() => {
-                      updateMuscles;
+                      updateMuscles(muscleGroup);
                     }}
                     key={muscleGroupIndex}
                     className={`hover:text-blue-400 duration-200 ${
