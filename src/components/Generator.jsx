@@ -87,7 +87,7 @@ export default function Generator() {
             onClick={toggleModal}
             className="relative flex items-center justify-center p-3"
           >
-            <p>
+            <p className="capitalize">
               {muscles.length === 0
                 ? "Select muscle groups"
                 : muscles.join(" ")}
