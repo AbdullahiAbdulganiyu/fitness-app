@@ -74,7 +74,7 @@ export default function Generator() {
               ).map((muscleGroup, muscleGroupIndex) => {
                 return (
                   <button key={muscleGroupIndex}>
-                    <p>{muscleGroup}</p>
+                    <p className="uppercase">{muscleGroup}</p>
                   </button>
                 );
               })}
