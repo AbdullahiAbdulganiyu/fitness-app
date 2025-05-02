@@ -32,7 +32,9 @@ export default function Generator() {
       return;
     }
 
-    if (muscles.length > 3) return;
+    if (muscles.length > 3) {
+      return;
+    }
 
     if (poison !== "individual") {
       setMuscles([muscleGroup]);
