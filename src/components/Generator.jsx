@@ -70,7 +70,7 @@ export default function Generator() {
                   setMuscles([]);
                   setPoison(type);
                 }}
-                className={`bg-slate-950 border py-3 rounded-lg duration-400 hover:border-blue-600
+                className={`bg-slate-950 border py-3 px-4 rounded-lg duration-400 hover:border-blue-600
                     ${type === poison ? "border-blue-600" : "border-blue-400"}`}
               >
                 <p className="capitalize">{type.replaceAll("_", " ")}</p>
