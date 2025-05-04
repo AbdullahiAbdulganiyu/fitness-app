@@ -147,7 +147,7 @@ export default function Generator({
             );
           })}
         </div>
-        <Button>Formulate</Button>
+        <Button funct={updateWorkout}>Formulate</Button>
       </SectionWrapper>
     </div>
   );
