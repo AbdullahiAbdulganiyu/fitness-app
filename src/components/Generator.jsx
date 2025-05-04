@@ -24,6 +24,7 @@ export default function Generator({
   setMuscles,
   goal,
   setGoal,
+  updateWorkout,
 }) {
   const [showModal, setShowModal] = useState(false);
 
