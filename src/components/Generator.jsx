@@ -17,7 +17,14 @@ function Header({ index, title, description }) {
   );
 }
 
-export default function Generator() {
+export default function Generator({
+  poison,
+  setPoison,
+  muscles,
+  setMuscles,
+  goal,
+  setGoal,
+}) {
   const [showModal, setShowModal] = useState(false);
 
   function toggleModal() {
