@@ -7,6 +7,9 @@ export default function ExerciseCard({ excercise, index }) {
         <h4 className="text-3xl hidden sm:inline sm:text-4xl md:text-5xl font-semibold text-slate-400">
           0{index + 1}
         </h4>
+        <h2 className="capitalize whitespace-nowrap truncate max-w-full text-lg sm:text-xl md:text-2xl flex-1 md:text-center">
+          {excercise.name.replaceAll("_", " ")}
+        </h2>
       </div>
     </div>
   );
