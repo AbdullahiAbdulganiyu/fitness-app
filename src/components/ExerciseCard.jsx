@@ -21,6 +21,7 @@ export default function ExerciseCard({ excercise, index }) {
           return (
             <div className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-900 w-full">
               <h3>{info === "reps" ? `${excercise.unit}` : info}</h3>
+              <p>{excercise[info]}</p>
             </div>
           );
         })}
