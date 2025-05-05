@@ -20,7 +20,13 @@ export default function Hero() {
         afflicted with sevre body dimorphia, unable to fit through doors.
       </p>
 
-      <Button>Accept & Begin</Button>
+      <Button
+        funct={() => {
+          window.location.href = "#generate";
+        }}
+      >
+        Accept & Begin
+      </Button>
     </div>
   );
 }
