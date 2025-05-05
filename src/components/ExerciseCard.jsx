@@ -13,7 +13,7 @@ export default function ExerciseCard({ excercise, index }) {
         <p className="text-sm text-slate-400 capitalize">{excercise.type}</p>
       </div>
       <div className="flex flex-col">
-        <h3>Muscle Groups</h3>
+        <h3 className="text-slate-400 text:sm">Muscle Groups</h3>
         <p>{excercise.muscles.join(" & ")}</p>
       </div>
     </div>
