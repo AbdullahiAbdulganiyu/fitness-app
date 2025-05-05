@@ -20,7 +20,9 @@ export default function ExerciseCard({ excercise, index }) {
         {["reps", "rest", "tempo"].map((info) => {
           return (
             <div className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-900 w-full">
-              <h3>{info === "reps" ? `${excercise.unit}` : info}</h3>
+              <h3 className="capitalize text-slate-400 text-sm">
+                {info === "reps" ? `${excercise.unit}` : info}
+              </h3>
               <p className="font-medium">{excercise[info]}</p>
             </div>
           );
