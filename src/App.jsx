@@ -15,6 +15,7 @@ function App() {
       return;
     }
     let newWorkout = generateWorkout({ poison, goal, muscles });
+    console.log(newWorkout);
     setWorkout(newWorkout);
   }
   return (
