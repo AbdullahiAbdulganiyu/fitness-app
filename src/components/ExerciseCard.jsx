@@ -18,7 +18,9 @@ export default function ExerciseCard({ excercise, index }) {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 sm:place-items-center gap-2">
         {["reps", "rest", "tempo"].map((info) => {
-          return <div></div>;
+          return (
+            <div className="flex flex-col p-2 rounded border-[1.5px] border-solid border-slate-900 w-full"></div>
+          );
         })}
       </div>
     </div>
