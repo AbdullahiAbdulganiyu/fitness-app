@@ -27,7 +27,9 @@ export default function ExerciseCard({ excercise, index }) {
             </div>
           );
         })}
-        <button className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-blue-600 w-full duration-200"></button>
+        <button className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-blue-600 w-full duration-200">
+          <h3>Sets Completed</h3>
+        </button>
       </div>
     </div>
   );
