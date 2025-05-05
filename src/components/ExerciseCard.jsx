@@ -12,6 +12,9 @@ export default function ExerciseCard({ excercise, index }) {
         </h2>
         <p className="text-sm text-slate-400 capitalize">{excercise.type}</p>
       </div>
+      <div className="flex flex-col">
+        <h3>Muscle Groups</h3>
+      </div>
     </div>
   );
 }
