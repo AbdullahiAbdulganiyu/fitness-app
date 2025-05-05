@@ -7,7 +7,7 @@ export default function Workout({ Workout }) {
     <SectionWrapper header={"Welcome to "} title={["The ", "DANGER", " zone"]}>
       <div className="flex flex-col gap-4 ">
         {Workout.map((exercise, index) => (
-          <ExerciseCard exercise={exercise} key={index} />
+          <ExerciseCard exercise={exercise} index={index} key={index} />
         ))}
       </div>
     </SectionWrapper>
