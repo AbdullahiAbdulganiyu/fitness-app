@@ -10,7 +10,7 @@ export default function ExerciseCard({ excercise, index }) {
         <h2 className="capitalize whitespace-nowrap truncate max-w-full text-lg sm:text-xl md:text-2xl flex-1 md:text-center">
           {excercise.name.replaceAll("_", " ")}
         </h2>
-        <p>{excercise.type}</p>
+        <p className="text-sm text-slate-400 capitalize">{excercise.type}</p>
       </div>
     </div>
   );
