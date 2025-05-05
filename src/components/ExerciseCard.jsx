@@ -37,7 +37,7 @@ export default function ExerciseCard({ excercise, index }) {
           className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-blue-600 w-full duration-200"
         >
           <h3 className="text-slate-400 text-sm capitalize">Sets Completed</h3>
-          <p className="font-medium">{setsCompleted[i] || 0}/5</p>
+          <p className="font-medium">{setsCompleted}/5</p>
         </button>
       </div>
     </div>
