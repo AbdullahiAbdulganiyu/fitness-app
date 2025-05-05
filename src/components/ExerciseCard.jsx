@@ -14,7 +14,7 @@ export default function ExerciseCard({ excercise, index }) {
       </div>
       <div className="flex flex-col">
         <h3 className="text-slate-400 text:sm">Muscle Groups</h3>
-        <p>{excercise.muscles.join(" & ")}</p>
+        <p className="capitalize">{excercise.muscles.join(" & ")}</p>
       </div>
     </div>
   );
