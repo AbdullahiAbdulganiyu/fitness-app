@@ -4,7 +4,7 @@ export default function ExerciseCard({ excercise, index }) {
   const [setsCompleted, setSetsCompleted] = useState(0);
 
   function handleSetIncrement() {
-    setSetsCompleted(setsCompleted + 1);
+    setSetsCompleted((setsCompleted + 1) % 5);
   }
   return (
     <div className="p-4 rounded-md flex flex-col gap-4 bg-slate-950 sm:flex-wrap">
