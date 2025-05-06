@@ -11,7 +11,7 @@ export default function Workout({ workout }) {
     >
       <div className="flex flex-col gap-4 ">
         {workout.map((exercise, index) => {
-          return <ExerciseCard exercise={exercise} index={index} key={index} />;
+          return <ExerciseCard exercise={exercise} i={index} key={index} />;
         })}
       </div>
     </SectionWrapper>
